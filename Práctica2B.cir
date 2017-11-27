@@ -1,0 +1,13 @@
+Descripcion:
+;V1	1	0	sin (0v, 10v, 500, 0s, 0, 0)
+;V1	1	0  AC 10V
+V1 1	0  pulse (0V, 5V, 0s, 1ns, 1ns, 1ms, 2ms)
+R2	2   3  560
+L1  3 	0  6.58mH
+;C1	3	0  100nF
+R1	1 	2  1200
+R3	2	0  1200
+;.ac DEC 10 100 100000
+.tran 0s 5ms
+.probe
+.end
